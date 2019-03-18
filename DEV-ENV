@@ -14,7 +14,7 @@ OpenJDK 64-Bit Server VM (build 10.0.2+13-Ubuntu-1ubuntu0.18.04.4, mixed mode)
         v7.10.1
          v8.0.0
 ->     v10.15.3
-default -> 10.15 (-> v10.15.3)
+default -> 10.15 (-> v10.15.3) with npm v6.4.1
 node -> stable (-> v10.15.3) (default)
 stable -> 10.15 (-> v10.15.3) (default)
 iojs -> N/A (default)
