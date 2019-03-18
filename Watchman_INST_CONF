@@ -1,0 +1,231 @@
+---------- [ INSTALLING DEPENDENCIES] -----------------------------------
+sudo apt-get install -y autoconf automake build-essential python-dev
+[sudo] password for shashank: 
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+autoconf is already the newest version (2.69-11).
+autoconf set to manually installed.
+automake is already the newest version (1:1.15.1-3ubuntu2).
+automake set to manually installed.
+build-essential is already the newest version (12.4ubuntu1).
+python-dev is already the newest version (2.7.15~rc1-1).
+python-dev set to manually installed.
+0 upgraded, 0 newly installed, 0 to remove and 26 not upgraded.
+--------------------------------------------------------------------------
+
+---------- [ INSTALLATION STEP - 1]------------------------------------------
+(base) shashank@shashank-Inspiron-15-3567:~/watchman$ ./autogen.sh 
+libtoolize: putting auxiliary files in '.'.
+libtoolize: linking file './ltmain.sh'
+libtoolize: putting macros in AC_CONFIG_MACRO_DIRS, 'm4'.
+libtoolize: linking file 'm4/libtool.m4'
+libtoolize: linking file 'm4/ltoptions.m4'
+libtoolize: linking file 'm4/ltsugar.m4'
+libtoolize: linking file 'm4/ltversion.m4'
+libtoolize: linking file 'm4/lt~obsolete.m4'
+configure.ac:22: installing './compile'
+configure.ac:3: installing './config.guess'
+configure.ac:3: installing './config.sub'
+configure.ac:4: installing './install-sh'
+configure.ac:4: installing './missing'
+Makefile.am: installing './depcomp'
+parallel-tests: installing './test-driver'
+---------------------------------------------------------------------------
+
+--------- [ INSTALLATION STEP - 2] ----------------------------------------
+(base) shashank@shashank-Inspiron-15-3567:~/watchman$ ./configure
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking target system type... x86_64-pc-linux-gnu
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... no
+checking for mawk... mawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking whether make supports nested variables... (cached) yes
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking whether gcc understands -c and -o together... yes
+checking for style of include used by make... GNU
+checking dependency style of gcc... gcc3
+checking for g++... g++
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking dependency style of g++... gcc3
+checking whether g++ supports C++11 features by default... yes
+checking how to run the C preprocessor... gcc -E
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking whether byte ordering is bigendian... no
+checking for inline... inline
+checking how to print strings... printf
+checking for a sed that does not truncate output... /bin/sed
+checking for fgrep... /bin/grep -F
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for ar... ar
+checking for archiver @FILE support... @
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for sysroot... no
+checking for a working dd... /bin/dd
+checking how to truncate binary pipes... /bin/dd bs=4096 count=1
+checking for mt... mt
+checking if mt is a manifest tool... no
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+checking how to run the C++ preprocessor... g++ -E
+checking for ld used by g++... /usr/bin/ld -m elf_x86_64
+checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+checking whether the g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking for g++ option to produce PIC... -fPIC -DPIC
+checking if g++ PIC flag -fPIC -DPIC works... yes
+checking if g++ static flag -static works... yes
+checking if g++ supports -c -o file.o... yes
+checking if g++ supports -c -o file.o... (cached) yes
+checking whether the g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... (cached) GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking dependency style of gcc... gcc3
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking for FOLLY... no
+checking for python... /home/shashank/anaconda3/bin/python
+checking for python version... 2.7
+checking for python platform... linux2
+checking for python script directory... ${prefix}/lib/python2.7/site-packages
+checking for python extension module directory... ${exec_prefix}/lib/python2.7/site-packages
+checking for pcre-config... /home/shashank/anaconda3/bin/pcre-config
+checking for PCRE using /home/shashank/anaconda3/bin/pcre-config... 8.42
+checking pcre.h usability... yes
+checking pcre.h presence... yes
+checking for pcre.h... yes
+checking for library containing pthread_create... -lpthread
+checking for library containing socket... none required
+checking for library containing SHA1_Init... -lcrypto
+checking for sys/types.h... (cached) yes
+checking for inttypes.h... (cached) yes
+checking locale.h usability... yes
+checking locale.h presence... yes
+checking for locale.h... yes
+checking port.h usability... no
+checking port.h presence... no
+checking for port.h... no
+checking sys/inotify.h usability... yes
+checking sys/inotify.h presence... yes
+checking for sys/inotify.h... yes
+checking sys/event.h usability... no
+checking sys/event.h presence... no
+checking for sys/event.h... no
+checking sys/ucred.h usability... no
+checking sys/ucred.h presence... no
+checking for sys/ucred.h... no
+checking sys/socket.h usability... yes
+checking sys/socket.h presence... yes
+checking for sys/socket.h... yes
+checking for mkostemp... yes
+checking for kqueue... no
+checking for port_create... no
+checking for inotify_init... yes
+checking for strtoll... yes
+checking for localeconv... yes
+checking for statfs... yes
+checking for accept4... yes
+checking for inotify_init1... yes
+checking for getattrlistbulk... no
+checking for openat... yes
+checking for fdopendir... yes
+checking for pipe2... yes
+checking for sys/vfs.h... yes
+checking for sys/param.h... yes
+checking for sys/mount.h... yes
+checking for sys/statfs.h... yes
+checking for sys/statvfs.h... yes
+checking valgrind/valgrind.h usability... no
+checking valgrind/valgrind.h presence... no
+checking for valgrind/valgrind.h... no
+checking execinfo.h usability... yes
+checking execinfo.h presence... yes
+checking for execinfo.h... yes
+checking sys/resource.h usability... yes
+checking sys/resource.h presence... yes
+checking for sys/resource.h... yes
+checking CoreServices/CoreServices.h usability... no
+checking CoreServices/CoreServices.h presence... no
+checking for CoreServices/CoreServices.h... no
+checking for FSEventStreamSetExclusionPaths... no
+checking for backtrace... yes
+checking for backtrace_symbols... yes
+checking for backtrace_symbols_fd... yes
+checking for sys_siglist... yes
+checking for memmem... yes
+checking for struct statvfs.f_fstypename... no
+checking for struct statvfs.f_basetype... no
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating thirdparty/jansson/jansson_config.h
+config.status: creating cppclient/watchmanclient.pc
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+
+Your build configuration:
+
+        CC = gcc
+        CPPFLAGS =  -D_REENTRANT -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -I/home/shashank/anaconda3/include
+        CFLAGS = -g -O2 -I/home/shashank/anaconda3/include -Wall -Wextra -Wdeclaration-after-statement -g -gdwarf-2 -fno-omit-frame-pointer
+        CXX = g++
+        CXXFLAGS = -g -O2 -Wall -Wextra -g -gdwarf-2 -fno-omit-frame-pointer
+        LDFLAGS = 
+        prefix: /usr/local
+        version: 4.9.0
+        state directory: /usr/local/var/run/watchman
+
+--------------------------------------------------------------------------------
