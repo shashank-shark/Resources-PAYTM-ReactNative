@@ -452,3 +452,70 @@ gcc -pthread -shared -B /home/shashank/anaconda3/compiler_compat -L/home/shashan
 copying build/lib.linux-x86_64-2.7/pywatchman/bser.so -> pywatchman
 make[1]: Leaving directory '/home/shashank/watchman'
 ---------------------------------------------------------------------------------------
+
+------- [ INSTALLING WATCHMAN] ---------------------------------------------
+(base) shashank@shashank-Inspiron-15-3567:~/watchman$ sudo make install
+cd python && /home/shashank/anaconda3/bin/python ./setup.py clean build_py -c -d . build_ext -i
+running clean
+removing 'build/temp.linux-x86_64-2.7' (and everything under it)
+running build_py
+running build_ext
+copying build/lib.linux-x86_64-2.7/pywatchman/bser.so -> pywatchman
+make[1]: Entering directory '/home/shashank/watchman'
+ /bin/mkdir -p '//usr/local/bin'
+  /bin/bash ./libtool   --mode=install /usr/bin/install -c watchman '//usr/local/bin'
+libtool: install: /usr/bin/install -c watchman //usr/local/bin/watchman
+cd python && /home/shashank/anaconda3/bin/python ./setup.py install --prefix /usr/local --root /
+running install
+running build
+running build_py
+copying pywatchman/pybser.py -> build/lib.linux-x86_64-2.7/pywatchman
+copying pywatchman/__init__.py -> build/lib.linux-x86_64-2.7/pywatchman
+copying pywatchman/compat.py -> build/lib.linux-x86_64-2.7/pywatchman
+copying pywatchman/capabilities.py -> build/lib.linux-x86_64-2.7/pywatchman
+copying pywatchman/encoding.py -> build/lib.linux-x86_64-2.7/pywatchman
+copying pywatchman/load.py -> build/lib.linux-x86_64-2.7/pywatchman
+running build_ext
+running build_scripts
+creating build/scripts-2.7
+copying and adjusting bin/watchman-wait -> build/scripts-2.7
+copying and adjusting bin/watchman-make -> build/scripts-2.7
+changing mode of build/scripts-2.7/watchman-wait from 644 to 755
+changing mode of build/scripts-2.7/watchman-make from 644 to 755
+running install_lib
+creating /usr/local/lib/python2.7/site-packages/pywatchman
+copying build/lib.linux-x86_64-2.7/pywatchman/pybser.py -> /usr/local/lib/python2.7/site-packages/pywatchman
+copying build/lib.linux-x86_64-2.7/pywatchman/__init__.py -> /usr/local/lib/python2.7/site-packages/pywatchman
+copying build/lib.linux-x86_64-2.7/pywatchman/bser.so -> /usr/local/lib/python2.7/site-packages/pywatchman
+copying build/lib.linux-x86_64-2.7/pywatchman/compat.py -> /usr/local/lib/python2.7/site-packages/pywatchman
+copying build/lib.linux-x86_64-2.7/pywatchman/capabilities.py -> /usr/local/lib/python2.7/site-packages/pywatchman
+copying build/lib.linux-x86_64-2.7/pywatchman/encoding.py -> /usr/local/lib/python2.7/site-packages/pywatchman
+copying build/lib.linux-x86_64-2.7/pywatchman/load.py -> /usr/local/lib/python2.7/site-packages/pywatchman
+byte-compiling /usr/local/lib/python2.7/site-packages/pywatchman/pybser.py to pybser.pyc
+byte-compiling /usr/local/lib/python2.7/site-packages/pywatchman/__init__.py to __init__.pyc
+byte-compiling /usr/local/lib/python2.7/site-packages/pywatchman/compat.py to compat.pyc
+byte-compiling /usr/local/lib/python2.7/site-packages/pywatchman/capabilities.py to capabilities.pyc
+byte-compiling /usr/local/lib/python2.7/site-packages/pywatchman/encoding.py to encoding.pyc
+byte-compiling /usr/local/lib/python2.7/site-packages/pywatchman/load.py to load.pyc
+running install_egg_info
+running egg_info
+creating pywatchman.egg-info
+writing pywatchman.egg-info/PKG-INFO
+writing top-level names to pywatchman.egg-info/top_level.txt
+writing dependency_links to pywatchman.egg-info/dependency_links.txt
+writing manifest file 'pywatchman.egg-info/SOURCES.txt'
+reading manifest file 'pywatchman.egg-info/SOURCES.txt'
+writing manifest file 'pywatchman.egg-info/SOURCES.txt'
+Copying pywatchman.egg-info to /usr/local/lib/python2.7/site-packages/pywatchman-1.4.0-py2.7.egg-info
+running install_scripts
+copying build/scripts-2.7/watchman-make -> /usr/local/bin
+copying build/scripts-2.7/watchman-wait -> /usr/local/bin
+changing mode of /usr/local/bin/watchman-make to 755
+changing mode of /usr/local/bin/watchman-wait to 755
+/usr/bin/install -c -d -m 777 //usr/local/var/run/watchman
+chmod g+s //usr/local/var/run/watchman
+touch //usr/local/var/run/watchman/.not-empty
+ /bin/mkdir -p '//usr/local/share/doc/watchman-4.9.0'
+ /usr/bin/install -c -m 644 README.markdown '//usr/local/share/doc/watchman-4.9.0'
+make[1]: Leaving directory '/home/shashank/watchman'
+--------------------------------------------------------------------------------
