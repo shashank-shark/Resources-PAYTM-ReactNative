@@ -2,14 +2,14 @@
 ################ AT THE TIME OF DEVELOPMENT - March 18 2019 ##############
 --------------------------------------------------------------------------
 
--------------- [JAVA] ------------------------------------------
+-------------- [JAVA] (GLOBAL) ------------------------------------------
 (base) shashank@shashank-Inspiron-15-3567:~$ java -version
 openjdk version "10.0.2" 2018-07-17
 OpenJDK Runtime Environment (build 10.0.2+13-Ubuntu-1ubuntu0.18.04.4)
 OpenJDK 64-Bit Server VM (build 10.0.2+13-Ubuntu-1ubuntu0.18.04.4, mixed mode)
 ----------------------------------------------------------------
 
--------------- [NVM] -------------------------------------------
+-------------- [NVM] (GLOBAL) -------------------------------------------
 (base) shashank@shashank-Inspiron-15-3567:~$ nvm ls
         v7.10.1
          v8.0.0
@@ -62,3 +62,38 @@ latest: 0.59.1     next: 0.59.0-rc.3
 published 4 days ago by react-native-bot <opensource+react-native-bot@fb.com>
 -----------------------------------------------------------------------------
 
+----------- [ADB Devices] ---------------------------------------------------
+(base) shashank@shashank-Inspiron-15-3567:~/ReactNativeProject/TempProject$ adb devices
+List of devices attached
+4c1b10f7cf40	device
+-----------------------------------------------------------------------------
+
+----------- [ LIST OF LSUBS] ------------------------------------------------
+(base) shashank@shashank-Inspiron-15-3567:~/ReactNativeProject/TempProject$ lsusb
+Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+Bus 001 Device 006: ID 0cf3:e009 Atheros Communications, Inc. 
+Bus 001 Device 005: ID 0bda:0129 Realtek Semiconductor Corp. RTS5129 Card Reader Controller
+Bus 001 Device 004: ID 0bda:5769 Realtek Semiconductor Corp. 
+Bus 001 Device 003: ID 046d:c05a Logitech, Inc. M90/M100 Optical Mouse
+Bus 001 Device 009: ID 2717:ff48  
+Bus 001 Device 002: ID 413c:2113 Dell Computer Corp. 
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+-----------------------------------------------------------------------------
+
+----------- [ AVD - Android Virtual Devices Used] ---------------------------
+(base) shashank@shashank-Inspiron-15-3567:~/ReactNativeProject/TempProject$ emulator -list-avds
+Pixel_2_API_28
+-----------------------------------------------------------------------------
+
+----------- [ ANDROID API's INSTALLED ON SYSTEM] ----------------------------
+API 23
+API 24
+API 25
+API 26
+API 27
+API 28
+-----------------------------------------------------------------------------
+
+----------- [ ANDROID VERSION USED - At the time of development] (GLOBAL) ---
+Pie
+------------------------------------------------------------------------------
