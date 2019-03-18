@@ -229,3 +229,226 @@ Your build configuration:
         state directory: /usr/local/var/run/watchman
 
 --------------------------------------------------------------------------------
+
+------------ [ WATCHMAN MAKE] --------------------------------------------------
+(base) shashank@shashank-Inspiron-15-3567:~/watchman$ make
+make  all-am
+make[1]: Entering directory '/home/shashank/watchman'
+  CXX      thirdparty/libtap_a-tap.o
+  AR       libtap.a
+ar: `u' modifier ignored since `D' is the default (see `U')
+  CC       thirdparty/wildmatch/wildmatch.o
+  AR       libwildmatch.a
+ar: `u' modifier ignored since `D' is the default (see `U')
+  CXX      thirdparty/jansson/libwmanjson_a-dump.o
+  CXX      thirdparty/jansson/libwmanjson_a-error.o
+  CXX      thirdparty/jansson/libwmanjson_a-load.o
+  CXX      thirdparty/jansson/libwmanjson_a-memory.o
+  CXX      thirdparty/jansson/libwmanjson_a-pack_unpack.o
+  CXX      thirdparty/jansson/libwmanjson_a-strbuffer.o
+  CXX      thirdparty/jansson/libwmanjson_a-strconv.o
+  CXX      thirdparty/jansson/libwmanjson_a-utf.o
+  CXX      thirdparty/jansson/libwmanjson_a-value.o
+  AR       libwmanjson.a
+ar: `u' modifier ignored since `D' is the default (see `U')
+  CXX      watchman-ChildProcess.o
+  CXX      watchman-ContentHash.o
+  CXX      watchman-CookieSync.o
+  CXX      watchman-FileDescriptor.o
+  CXX      watchman-FileInformation.o
+  CXX      watchman-InMemoryView.o
+  CXX      watchman-Pipe.o
+  CXX      watchman-PubSub.o
+  CXX      watchman-ThreadPool.o
+  CXX      watchman-QueryableView.o
+  CXX      watchman-spawn.o
+  CXX      watchman-opt.o
+  CXX      watchman-cfg.o
+  CXX      watchman-clockspec.o
+  CXX      watchman-checksock.o
+  CXX      watchman-error_category.o
+  CXX      watchman-fstype.o
+  CXX      watchman-log.o
+  CXX      watchman-ignore.o
+  CXX      watchman-json.o
+  CXX      watchman-bser.o
+  CXX      watchman-expflags.o
+  CXX      watchman-hash.o
+  CXX      watchman-ioprio.o
+  CXX      watchman-opendir.o
+  CXX      watchman-pending.o
+  CXX      watchman-perf.o
+  CXX      watchman-stream.o
+  CXX      watchman-stream_stdout.o
+  CXX      watchman-stream_unix.o
+  CXX      watchman-timedlock.o
+  CXX      cmds/watchman-find.o
+  CXX      cmds/watchman-info.o
+  CXX      cmds/watchman-log.o
+  CXX      cmds/watchman-query.o
+  CXX      cmds/watchman-since.o
+  CXX      cmds/watchman-reg.o
+  CXX      cmds/watchman-state.o
+  CXX      cmds/watchman-subscribe.o
+  CXX      cmds/watchman-trigger.o
+  CXX      cmds/watchman-watch.o
+  CXX      cmds/watchman-debug.o
+  CXX      query/watchman-base.o
+  CXX      query/watchman-dirname.o
+  CXX      query/watchman-parse.o
+  CXX      query/watchman-eval.o
+  CXX      query/watchman-glob.o
+  CXX      query/watchman-intcompare.o
+  CXX      query/watchman-type.o
+  CXX      query/watchman-suffix.o
+  CXX      query/watchman-match.o
+  CXX      query/watchman-pcre.o
+  CXX      query/watchman-name.o
+  CXX      query/watchman-fieldlist.o
+  CXX      query/watchman-since.o
+  CXX      query/watchman-empty.o
+  CXX      watcher/watchman-auto.o
+  CXX      watcher/watchman-fsevents.o
+  CXX      watcher/watchman-inotify.o
+  CXX      watcher/watchman-kqueue.o
+  CXX      watchman-launchd.o
+  CXX      watchman-listener.o
+  CXX      watchman-listener-user.o
+  CXX      watchman-clientmode.o
+  CXX      watchman-main.o
+  CXX      root/watchman-ageout.o
+  CXX      root/watchman-crawler.o
+  CXX      root/watchman-dir.o
+  CXX      root/watchman-file.o
+  CXX      root/watchman-init.o
+  CXX      root/watchman-iothread.o
+  CXX      root/watchman-notifythread.o
+  CXX      root/watchman-poison.o
+  CXX      root/watchman-reap.o
+  CXX      root/watchman-resolve.o
+  CXX      root/watchman-stat.o
+  CXX      root/watchman-symlink.o
+  CXX      root/watchman-sync.o
+  CXX      root/watchman-threading.o
+  CXX      root/watchman-vcs.o
+  CXX      root/watchman-warnerr.o
+  CXX      root/watchman-watchlist.o
+  CXX      scm/watchman-Mercurial.o
+  CXX      scm/watchman-SCM.o
+  CXX      watchman-state.o
+  CXX      watchman-string.o
+  CXX      watchman-time.o
+  CXXLD    watchman
+  CXX      tests/tests_art_t-art_test.o
+  CXX      tests/tests_art_t-log_stub.o
+  CXX      tests_art_t-PubSub.o
+  CXX      tests_art_t-string.o
+  CXX      tests_art_t-hash.o
+  CXX      tests_art_t-log.o
+  CXXLD    tests/art.t
+  CXX      tests/tests_bser_t-bser.o
+  CXX      tests/tests_bser_t-log_stub.o
+  CXX      tests_bser_t-PubSub.o
+  CXX      tests_bser_t-bser.o
+  CXX      tests_bser_t-string.o
+  CXX      tests_bser_t-hash.o
+  CXX      tests_bser_t-log.o
+  CXXLD    tests/bser.t
+  CXX      tests/tests_cache_t-CacheTest.o
+  CXX      tests/tests_cache_t-log_stub.o
+  CXX      tests_cache_t-PubSub.o
+  CXX      tests_cache_t-ThreadPool.o
+  CXX      tests_cache_t-string.o
+  CXX      tests_cache_t-hash.o
+  CXX      tests_cache_t-log.o
+  CXXLD    tests/cache.t
+  CXX      tests/tests_childproc_t-childproc.o
+  CXX      tests/tests_childproc_t-log_stub.o
+  CXX      tests_childproc_t-ChildProcess.o
+  CXX      tests_childproc_t-Pipe.o
+  CXX      tests_childproc_t-FileDescriptor.o
+  CXX      tests_childproc_t-FileInformation.o
+  CXX      tests_childproc_t-PubSub.o
+  CXX      tests_childproc_t-string.o
+  CXX      tests_childproc_t-hash.o
+  CXX      tests_childproc_t-log.o
+  CXXLD    tests/childproc.t
+  CXX      tests/tests_future_t-FutureTest.o
+  CXX      tests/tests_future_t-log_stub.o
+  CXX      tests_future_t-PubSub.o
+  CXX      tests_future_t-ThreadPool.o
+  CXX      tests_future_t-string.o
+  CXX      tests_future_t-hash.o
+  CXX      tests_future_t-log.o
+  CXXLD    tests/future.t
+  CXX      tests/tests_ignore_t-ignore_test.o
+  CXX      tests/tests_ignore_t-log_stub.o
+  CXX      tests_ignore_t-hash.o
+  CXX      tests_ignore_t-ignore.o
+  CXX      tests_ignore_t-string.o
+  CXX      tests_ignore_t-PubSub.o
+  CXX      tests_ignore_t-log.o
+  CXXLD    tests/ignore.t
+  CXX      tests/tests_pending_t-pending_test.o
+  CXX      tests/tests_pending_t-log_stub.o
+  CXX      tests_pending_t-FileDescriptor.o
+  CXX      tests_pending_t-FileInformation.o
+  CXX      tests_pending_t-PubSub.o
+  CXX      tests_pending_t-hash.o
+  CXX      tests_pending_t-ignore.o
+  CXX      tests_pending_t-pending.o
+  CXX      tests_pending_t-expflags.o
+  CXX      tests_pending_t-opendir.o
+  CXX      tests_pending_t-cfg.o
+  CXX      tests_pending_t-time.o
+  CXX      tests_pending_t-string.o
+  CXX      tests_pending_t-log.o
+  CXXLD    tests/pending.t
+  CXX      tests/tests_result_t-ResultTest.o
+  CXX      tests/tests_result_t-log_stub.o
+  CXX      tests_result_t-PubSub.o
+  CXX      tests_result_t-string.o
+  CXX      tests_result_t-hash.o
+  CXX      tests_result_t-log.o
+  CXXLD    tests/result.t
+  CXX      tests/tests_string_t-string_test.o
+  CXX      tests/tests_string_t-log_stub.o
+  CXX      tests_string_t-PubSub.o
+  CXX      tests_string_t-hash.o
+  CXX      tests_string_t-log.o
+  CXX      tests_string_t-string.o
+  CXXLD    tests/string.t
+  CXX      tests/tests_log_t-log.o
+  CXX      tests_log_t-PubSub.o
+  CXX      tests_log_t-string.o
+  CXX      tests_log_t-hash.o
+  CXX      tests_log_t-log.o
+  CXXLD    tests/log.t
+  CXX      tests/tests_wildmatch_t-wildmatch_test.o
+  CXX      tests/tests_wildmatch_t-log_stub.o
+  CXX      tests_wildmatch_t-PubSub.o
+  CXX      tests_wildmatch_t-string.o
+  CXX      tests_wildmatch_t-hash.o
+  CXX      tests_wildmatch_t-log.o
+  CXXLD    tests/wildmatch.t
+cd python && /home/shashank/anaconda3/bin/python ./setup.py clean build_py -c -d . build_ext -i
+running clean
+running build_py
+byte-compiling ./pywatchman/pybser.py to pybser.pyc
+byte-compiling ./pywatchman/__init__.py to __init__.pyc
+byte-compiling ./pywatchman/compat.py to compat.pyc
+byte-compiling ./pywatchman/capabilities.py to capabilities.pyc
+byte-compiling ./pywatchman/encoding.py to encoding.pyc
+byte-compiling ./pywatchman/load.py to load.pyc
+running build_ext
+building 'pywatchman.bser' extension
+creating build
+creating build/temp.linux-x86_64-2.7
+creating build/temp.linux-x86_64-2.7/pywatchman
+gcc -pthread -B /home/shashank/anaconda3/compiler_compat -Wl,--sysroot=/ -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -I/home/shashank/anaconda3/include/python2.7 -c pywatchman/bser.c -o build/temp.linux-x86_64-2.7/pywatchman/bser.o
+creating build/lib.linux-x86_64-2.7
+creating build/lib.linux-x86_64-2.7/pywatchman
+gcc -pthread -shared -B /home/shashank/anaconda3/compiler_compat -L/home/shashank/anaconda3/lib -Wl,-rpath=/home/shashank/anaconda3/lib -Wl,--no-as-needed -Wl,--sysroot=/ build/temp.linux-x86_64-2.7/pywatchman/bser.o -L/home/shashank/anaconda3/lib -lpython2.7 -o build/lib.linux-x86_64-2.7/pywatchman/bser.so
+copying build/lib.linux-x86_64-2.7/pywatchman/bser.so -> pywatchman
+make[1]: Leaving directory '/home/shashank/watchman'
+---------------------------------------------------------------------------------------
